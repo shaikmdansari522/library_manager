@@ -1,2 +1,2 @@
 [MESSAGES CONTROL]
-disable=missing-class-docstring,missing-function-docstring,trailing-whitespace,line-too-long,protected-access,too-many-statements
+disable=missing-module-docstring,missing-class-docstring,missing-function-docstring,trailing-whitespace,line-too-long,protected-access,too-many-statements
