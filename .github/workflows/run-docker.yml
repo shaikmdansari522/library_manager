@@ -1,0 +1,20 @@
+name: Build and Run the python script
+
+on:
+  push:
+    branches: [ "main" ]
+  workflow_dispatch:
+  
+jobs:
+  build-and-run:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Build the docker image
+        run: docker build -t my-python-app:latest .
+
+      - name: Run Python script in Docker
+        run: docker run --rm my-python-app:latest
+  
